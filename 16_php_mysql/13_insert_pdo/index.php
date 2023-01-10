@@ -10,7 +10,7 @@
   // ASSUNTO DA AULA
   $stmt = $conn->prepare("INSERT INTO itens (nome, descricao) VALUES (:nome, :descricao)");
 
-  $nome = "Suporte monitor";
+  $nome = "Suporte monitor novo";
   $descricao = "O suporte está novo e na caixa ainda.";
 
   $stmt->bindParam(":nome", $nome);
